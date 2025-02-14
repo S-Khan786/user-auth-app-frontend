@@ -8,7 +8,7 @@ const SearchUser = () => {
   const handleSearch = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get(`http://localhost:8000/api/auth/search/${query}`, {
+      const res = await axios.get(`https://user-auth-app-4ov4.onrender.com/api/auth/search/${query}`, {
         headers: { "x-auth-token": token },
       });
       setUser(res.data);
@@ -43,7 +43,9 @@ const SearchUser = () => {
             <p>Email: {user.email}</p>
             <p>Full Name: {user.fullName}</p>
             <p>Gender: {user.gender}</p>
-            <p>Date of Birth: {new Date(user.dateOfBirth).toLocaleDateString()}</p>
+            <p>
+              Date of Birth: {new Date(user.dateOfBirth).toLocaleDateString()}
+            </p>
             <p>Country: {user.country}</p>
           </div>
         )}
