@@ -8,6 +8,7 @@
 
 <h1>📌 User Authentication API</h1>
 <p>This project is a backend application built with <strong>Express.js</strong> and <strong>MongoDB</strong> that allows user registration, login, and searching users by username or email.</p>
+<strong><a href="https://user-auth-app-4ov4.onrender.com/login">DEMO LINK</a></strong>
 
 <hr>
 
